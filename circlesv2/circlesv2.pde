@@ -2,7 +2,6 @@ ArrayList<Circle> a = new ArrayList<Circle>();
 ArrayList<Loading> b = new ArrayList<Loading>();
 ArrayList<Loading1> c= new ArrayList<Loading1>();
 ArrayList<Shape> d = new ArrayList<Shape>();
-ArrayList<Rect> e = new ArrayList<Rect>();
 int i=-1;
 
 void setup(){
@@ -34,16 +33,9 @@ void draw(){
   }
   i=-1;
   while (i<5){
-    d.add(new Shape(20+(i*50),400));
+    d.add(new Shape("penta",20+(i*50),400));
     i++;
     Shape num=d.get(i);
-    num.makeit();
-  }
-  i=-1;
-  while (i<5){
-    e.add(new Rect(20+(i*50),500));
-    i++;
-    Rect num=e.get(i);
     num.makeit();
   }
 }
