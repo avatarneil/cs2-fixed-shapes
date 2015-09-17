@@ -33,7 +33,7 @@ void draw(){
   }
   i=-1;
   while (i<5){
-    d.add(new Shape("penta",20+(i*50),400));
+    d.add(new Shape("hex",20+(i*50),400));
     i++;
     Shape num=d.get(i);
     num.makeit();
