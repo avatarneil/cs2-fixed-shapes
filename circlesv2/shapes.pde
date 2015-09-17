@@ -26,5 +26,18 @@ class Shape{
     vertex(startingX,startingY);
     endShape();
     }
+    else if ( type == "hex"){
+    beginShape();
+    vertex(startingX,startingY);
+    vertex(startingX + 10, startingY - 10);
+    vertex(startingX + 20,startingY - 20);
+    vertex(startingX + 30, startingY - 10);
+    vertex(startingX + 40,startingY);
+    vertex(startingX + 30,startingY + 10);
+    vertex(startingX + 20,startingY + 20);
+    vertex(startingX + 10, startingY + 10);
+    vertex(startingX,startingY);
+    endShape();
+    }
   }
 }
