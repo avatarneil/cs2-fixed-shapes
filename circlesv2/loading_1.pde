@@ -1,9 +1,9 @@
 class Loading1{
-  float startingX;
-  float startingY; 
-  float radi;
-  float startingDist;
-  float endingDist;
+  final float startingX;
+  final float startingY; 
+  final float radi;
+  final float startingDist;
+  final float endingDist;
   Loading1(float x, float y, float radius,float endDist){
     startingX=x;
     startingY=y;

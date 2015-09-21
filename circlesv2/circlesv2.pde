@@ -6,13 +6,13 @@ int i=-1;
 
 void setup(){
   size(600,600);
-  pixelDensity(1);
+  smooth(4);
   background(255);
 }
 
 void draw(){
   while (i<5){
-    a.add(new Circle(20+(i*50),100,7*i));
+    a.add(new Circle("blue",20+(i*50),100,7*i));
     i++;
     Circle num=a.get(i);
     num.makeit();
@@ -33,7 +33,7 @@ void draw(){
   }
   i=-1;
   while (i<5){
-    d.add(new Shape("hex",20+(i*50),400));
+    d.add(new Shape("penta",20+(i*50),400,"orange"));
     i++;
     Shape num=d.get(i);
     num.makeit();
