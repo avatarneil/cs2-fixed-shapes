@@ -1,16 +1,16 @@
-ArrayList<Circle> a = new ArrayList<Circle>();
+ArrayList<Circle> a = new ArrayList<Circle>(); //arraylists for each class
 ArrayList<Loading> b = new ArrayList<Loading>();
 ArrayList<Loading1> c= new ArrayList<Loading1>();
 ArrayList<Shape> d = new ArrayList<Shape>();
 int i=-1;
 
-void setup(){
+void setup(){ //setup for sketch
   size(600,600);
   smooth(4);
   background(255);
 }
 
-void draw(){
+void draw(){ //draw for sketch and creating and calling draw functions for each shape, edit strings in quotes here for different results.
   while (i<5){
     a.add(new Circle("blue",20+(i*50),100,7*i));
     i++;
